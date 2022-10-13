@@ -3,19 +3,15 @@ const tg = window.Telegram.WebApp;
 
 function App() {
   
-  useEffect(() => {
-    
-    tg.ready();
-    
-  }, []);
-
+  tg.ready();
   const onClose = () =>{
     tg.close();
   }
 
   return (
     <div className="App">
-      Work
+      ТУТ БУДЕТ ГЛАВНОЕ ОКНО ПРОГРАММЫ
+      <br/>
       <button onClick={onClose}>Закрыть</button>
     </div>
   );
