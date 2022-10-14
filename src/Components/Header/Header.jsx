@@ -1,10 +1,10 @@
-import React from "react";
-import Button from '../Button/Button'
-import { useTelegram } from "../../Hooks/useTelegram";
+import React from 'react';
+import Button from "../Button/Button";
+import {useTelegram} from "../../Hooks/useTelegram";
+import './Header.css';
 
-const Header = (props) =>{
-
-    const {user,onClose} = useTelegram();
+const Header = () => {
+    const {user, onClose} = useTelegram();
 
     return (
         <div className={'header'}>
@@ -14,6 +14,6 @@ const Header = (props) =>{
             </span>
         </div>
     );
-}
+};
 
 export default Header;
